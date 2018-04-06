@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:ChartDemo"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms" 
+             x:Class="ChartDemo.ChartDemoPage">
+
+    
+    <ScrollView>
+
+    <Grid>
+  <Grid.RowDefinitions>
+    <RowDefinition Height="50" />
+    <RowDefinition Height="200" />
+    <RowDefinition Height="200" />
+    <RowDefinition Height="200" />
+    <RowDefinition Height="200" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="*" />
+  </Grid.ColumnDefinitions>
+
+<Label Font="Bold, 20" 
+      Text="Chart Demo Application" 
+       Grid.Row="0"
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+            
+ <microcharts:ChartView x:Name="chartView1" 
+                        Grid.Row="1"
+                        HeightRequest="200" />
+ <microcharts:ChartView x:Name="chartView2" 
+                        Grid.Row="2"
+                        HeightRequest="200" />
+ <microcharts:ChartView x:Name="chartView3" 
+                        Grid.Row="3"
+                        HeightRequest="200" />
+ <microcharts:ChartView x:Name="chartView4" 
+                        Grid.Row="4"
+                        HeightRequest="200" />
+            
+</Grid>
+  
+     </ScrollView>
+</ContentPage>
